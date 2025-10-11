@@ -2,8 +2,6 @@
 
 A comprehensive desktop application for managing student records, attendance, and test scores with data visualization capabilities. Built with Python, Tkinter, and MySQL.
 
-![Main Window](Main_Window.png)
-
 ## 🌟 Features
 
 ### 1. **Student Information Management**
@@ -12,7 +10,7 @@ A comprehensive desktop application for managing student records, attendance, an
 - Data validation to ensure accuracy
 - View complete student records in organized tables
 
-![Main Table](Main_Table.png)
+![Main Window](Main_Window.png)
 
 ### 2. **Attendance Tracking**
 - Record daily attendance by entering roll numbers of absent students
@@ -20,8 +18,6 @@ A comprehensive desktop application for managing student records, attendance, an
 - Automatic calculation of present days
 - Export attendance data to CSV format
 - Visual attendance summary for each student
-
-![Attendance Table](Attendance_Table.png)
 
 ### 3. **Test Management System**
 - Create multiple tests dynamically (UT1, UT2, UT3, etc.)
@@ -247,6 +243,25 @@ This is a student project created to learn database management and GUI developme
 ## 📝 License
 
 This is an educational project. Feel free to use and modify for learning purposes.
+
+## Sample
+
+Run SQLentry.py after first time setup to create the sample tables. The script will enter the sample data automatically on run.
+See, pictures for reference.
+
+- Main_Table.png
+- Attendance_Table.png
+- Search_Result1.png
+- Search_Result2.png
+- UT1_Table.png
+- UT1_Analysis.png
+
+Reference pictures of database tables.
+
+- maintable.png
+- attendance.png
+- test.png
+- ut1.png
 
 ## 📞 Support
 
