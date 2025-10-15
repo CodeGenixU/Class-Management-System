@@ -10,7 +10,7 @@ A comprehensive desktop application for managing student records, attendance, an
 - Data validation to ensure accuracy
 - View complete student records in organized tables
 
-![Main Window](Main_Window.png)
+![Main Window](Images/Main_Window.png)
 
 ### 2. **Attendance Tracking**
 - Record daily attendance by entering roll numbers of absent students
@@ -30,7 +30,7 @@ A comprehensive desktop application for managing student records, attendance, an
   - Computer Science (CS)
   - Physical & Health Education (P.H.E.)
 
-![Add Test](Add_Test.png)
+![Add Test](Images/Add_Test.png)
 
 ### 4. **Marks Entry**
 - Easy-to-use interface for entering student marks
@@ -39,7 +39,7 @@ A comprehensive desktop application for managing student records, attendance, an
 - Roll number-based student identification
 - Reset functionality for quick corrections
 
-![Marks Entry](Marks_Entry.png)
+![Marks Entry](Images/Marks_Entry.png)
 
 ### 5. **Data Viewing & Analysis**
 - **Main Table View**: Complete student information
@@ -52,8 +52,8 @@ A comprehensive desktop application for managing student records, attendance, an
   - Number of students above average
   - Number of students passed (33% criteria)
 
-![Output Window](Output_Window.png)
-![UT1 Analysis](UT1_Analysis.png)
+![Output Window](Images/Output_Window.png)
+![UT1 Analysis](Images/UT1_Analysis.png)
 
 ### 6. **Data Export**
 - Export tables to CSV format
@@ -121,21 +121,24 @@ For_gift/
 ├── new_test_window.py         # Add new test interface
 ├── output_window.py           # Data viewing and analysis interface
 ├── First_interface.py         # Welcome screen
-├── SQLentry.py                # SQL utility functions
-├── Access.txt                 # Database credentials (not included)
-├── SQL.txt                    # Sample SQL commands
+├── SQLentry.py                # SQL utility functions for creating sample database
+├── Access.txt                 # Database credentials 
+├── SQL.txt                    # Sample SQL commands for sample database
 ├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+├── README.md                  # This file
+└──  Images/                   # Sample images for reference
 ```
 
 ## 💡 Usage Guide
 
 ### First Time Setup
 
-1. Run `main.py`
-2. The application will automatically create the database and required tables
-3. A welcome screen will appear with project information
-4. Click "OK, done" to proceed to the main window
+1. Check that MySQL server is running and accessible
+2. Ensure `Access.txt` contains correct database credentials
+3. Run `main.py` to initialize the database and tables
+4. The application will automatically create the database and required tables
+5. A welcome screen will appear with project information
+6. Click "OK, done" to proceed to the main window
 
 ### Adding Students
 
@@ -247,7 +250,7 @@ This is an educational project. Feel free to use and modify for learning purpose
 ## Sample
 
 Run SQLentry.py after first time setup to create the sample tables. The script will enter the sample data automatically on run.
-See, pictures for reference.
+See, pictures in Images for reference.
 
 - Main_Table.png
 - Attendance_Table.png
