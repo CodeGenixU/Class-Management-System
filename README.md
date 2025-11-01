@@ -22,7 +22,7 @@
 ![Welcome](Images/Welcome.png)
 A warm welcome from the creator
 ### Main Window
-![Main Window](Images/main_window.png)
+![Main Window](Images/Main_Window.png)
 The hub of the app with a clean, guided flow:
 - **Add students**: Names, roll numbers, and more — validated and neatly stored.
 - **Track attendance**: Enter absent roll numbers; everyone else is marked present automatically.
