@@ -1,5 +1,5 @@
 import tkinter as tk
-import mysql.connector as Mysql
+import mysql.connector as Mysql # type: ignore
 import test_window
 import output_window
 #-------------------------------------------------------------------------------
@@ -88,7 +88,7 @@ def mw():
         #---------------------------------------------------------------------
         global Lb1
         while Lb1 :
-            Lb1.destroy()
+            Lb1.destroy() # type: ignore
             Lb1 = ""
         #----------------------------------------------------------------------------
         l = []
@@ -182,10 +182,10 @@ def mw():
         global Lb21
         global Lb22
         while Lb21 :
-            Lb21.destroy()
+            Lb21.destroy() # type: ignore
             Lb21 = ""
         while Lb22 :
-            Lb22.destroy()
+            Lb22.destroy() # type: ignore
             Lb22 = ""
             
         l = []
