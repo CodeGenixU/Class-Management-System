@@ -45,7 +45,7 @@ except Exception:
                 
                 c.execute("""
                 CREATE TABLE test (
-                    Testname VARCHAR(10),
+                    Testname VARCHAR(100),
                     Physics INT,
                     Chemistry INT,
                     Maths INT,

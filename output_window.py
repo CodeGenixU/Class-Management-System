@@ -71,6 +71,10 @@ def TMF(name):
 #-----------------------------------------------------------------------------------
 def TD(name):
     wi = tk.Tk()
+    if name == "maintable":
+        wi.title("Main Table")
+    else:
+        wi.title(name.capitalize())
     L = tk.Label(wi , text = TMD(name) , font = ("Courier",12) )
     L.pack()
     def quit():
@@ -86,6 +90,7 @@ def ow():
     sql = mysql.cursor()
     #------------------------------------------------------------------------------------
     win = tk.Tk()
+    win.title("Dashboard")
     win.geometry("500x300")
     #------------------------------------------------------------------------------------
     F1 = tk.Frame(win , bg = "#FFA07A" )
@@ -143,6 +148,7 @@ def ow():
                 table.add_row(k)
         Table = table.draw()
         wi = tk.Tk()
+        wi.title("Attendance Record")
         L = tk.Label(wi , text = Table , font = ("Courier",12) )
         L.pack()
         def quit():
@@ -213,8 +219,10 @@ def ow():
         for i in data :
             table.add_row(i)
             mlt.plot(l[1:],i[1:], label = i[0])
+            mlt.title("Performance")
         Table = table.draw()
         wi = tk.Tk()
+        wi.title("Profile")
         for i in DL :
             L = tk.Label(wi , text = i )
             L.pack()
@@ -248,7 +256,7 @@ def ow():
 
     for i in buttons:
         z = i[0].lower()
-        j = tk.Button(F32 , text = i[0] , command = lambda : TD(z) , bg = "#FFD7BE" , fg = "#03A9F4" , font = ("Arial",10,"bold"))
+        j = tk.Button(F32 , text = i[0] , command = lambda z=z: TD(z) , bg = "#FFD7BE" , fg = "#03A9F4" , font = ("Arial",10,"bold"))
         j.pack(side = tk.LEFT , padx = 20 )
     #----------------------------------------------------------------------------------------------
     L = tk.Label(F33 , text = "Select the test which you want to analyse :- " , bg = "#FFD7BE" , fg = "#03A9F4" )
@@ -289,6 +297,7 @@ def ow():
             table.add_row(i)
         T = table.draw()
         wi = tk.Tk()
+        wi.title(f"{tes.capitalize()} Report")
         L = tk.Label(wi , text = T , font = ("Courier",12) )
         L.pack()
         def quit():
@@ -302,8 +311,8 @@ def ow():
 
     for i in buttons:
         z = i[0].lower()
-        i = tk.Button(F34 , text = i[0] , command = lambda : TA(z) , bg = "#FFD7BE" , fg = "#03A9F4" , font = ("Arial",10,"bold"))
-        i.pack(side = tk.LEFT , padx = 20 )
+        btn = tk.Button(F34 , text = i[0] , command = lambda z=z: TA(z) , bg = "#FFD7BE" , fg = "#03A9F4" , font = ("Arial",10,"bold"))
+        btn.pack(side = tk.LEFT , padx = 20 )
     #-------------------------------------------------------------------------------------------------
     def Back() :
         mysql.close()

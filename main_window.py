@@ -34,6 +34,7 @@ def mw():
 
     win = tk.Tk()
     win.geometry("1000x600")
+    win.title("Main Window")
     #-------------------------------------------------------------------------------
     F1 = tk.Frame(master = win , bg = "#FFA500")
     F1.pack(fill = "both" , expand = True )
@@ -254,7 +255,7 @@ def mw():
         win.destroy()
         output_window.ow()
     #----------------------------------------------------------------------------------
-    OW = tk.Button(master = F3u , text = "Data Viewing", command = output , width = 10 , height = 2 )
+    OW = tk.Button(master = F3u , text = "Dashboard", command = output , width = 10 , height = 2 )
     OW.pack(side = tk.LEFT , padx = 40)
     #---------------------------------------------------------------------------------
     def sd():

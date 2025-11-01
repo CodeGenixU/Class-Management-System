@@ -12,11 +12,7 @@ application .
 At last but not the least we 'THANK YOU' all for using our application .
 """
 s2 ="""
-From  -
-       --> Abhinav Kumar
-   --> Utkarsh Nag
-            --> Tanisq Choudhary
-    --> Dhruv Kumar
+From Abhinav Kumar
 """
 
 def swagat():
